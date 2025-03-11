@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="navbar-item">
+                    <a class="navbar-link" href="#main">Главная</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="#about">Обо мне</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="#skills">Навыки и стэк</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href=" projects">Проекты</a>
+                </li>
+            </ul>
+            <div class="form-button-container">
+                <a class="form-button" href="#form">
+                    <span class="button-text">Связаться со мной</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-section main" id="main"> 
+            <h1 class="main-title">Раджаб Магомедов</h1>
+            <p>Создаю адаптивные и быстрые веб-интерфейсы<br> Фокус на чистом коде, удобстве и функциональности</p>
+            <img class="main-image" src="/images/Главный экран.png" alt="Картинка главного экрана">
+        </section>
+
+        <section class="page-section about" id="about">
+            <h2 class="about-title">Приветствую, я веб-разработчик</h2>
+            <p>Разрабатываю современные сайты, учитывая пользовательский опыт и передовые технологии</p>
+            <img class="about-image" src="/" alt="Фото автора">
+        </section>
+
+        <section class="page-section skills" id="skills">
+
+        </section>
+
+        <section class="page-section projects" id="projects">
+            <a href="https://github.com/R-magomedov" target="_blank">Посмотреть на Github</a>
+        </section>
+
+        <section class="page-section form" id="form">
+            <form>
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+
+                <label for="task">Расскажите про свою задачу</label>
+                <textarea id="task" name="task"></textarea>
+
+                <input type="submit" value="Отправить">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
