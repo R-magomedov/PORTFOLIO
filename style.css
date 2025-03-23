@@ -125,12 +125,6 @@
     color: #fff;
   }
 
-  @media (max-width: 800px) {
-    .navbar {
-      flex-direction: column;
-    }
-  }
-
 
   /* Блок 1. Интро*/
 
