@@ -1,0 +1,34 @@
+  /* Блок 2. Обо мне */
+
+  h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+  }
+  
+  .about-background {
+    background-color:#5DD9C8;
+    padding-top: 75px;
+    width: 100%;
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .about-image {
+    border: 3px solid #5DD9C8;
+    border-radius: 10px;
+    width: 30vmax;
+    height: 40vmax;
+    overflow: hidden;
+    margin: -7vw 0 76px 0;
+  }
+  
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  

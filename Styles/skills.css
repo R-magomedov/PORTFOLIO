@@ -1,0 +1,53 @@
+
+/* Блок 3. Навыки и скилы */
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 80%;
+    margin: 3rem auto;
+  }
+  
+  .skills-table-header {
+    font: var(--table-header);
+    margin: 1vh 0;
+  }
+  
+  .skills-table-text {
+    font: var(--text-table-subheader);
+    margin: 1vh 0;
+  }
+  
+  .skills-container section ul li {
+    font: var(--text-table-subheader);
+  }
+  
+  .skills-table-p {
+    font: var(--text-table-p);
+    margin: 1vh 0;
+  }
+  
+  .skills-card {
+    border: 1px solid #5DD9C8;
+    border-radius: 12px;
+    padding: 45px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  .text-orange {
+    margin-top: 20px;
+    color: #FF9235;
+  }
+  
+  .image-skills {
+    max-width: 50px;
+  }
+  
+  @media (max-width: 1000px) {
+    .skills-container {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+    }
+  }

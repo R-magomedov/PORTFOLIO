@@ -1,0 +1,144 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px; 
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: #fff;
+    padding: 0;
+    box-shadow: var(--nav-shadow);
+  }
+  
+  .navbar-list {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 1rem;
+    padding: 0;
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 18px;
+    
+  }
+  
+  .navbar-link:hover {
+    background-color: #333; 
+    color: #fff;
+    border-radius: 15px;
+  }
+  
+  .form-button-container {
+    border-radius: 15px;
+    border: 2px solid #FF9235;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    padding: 9px 22px;
+    text-decoration: none;
+    color: #FF9235;
+    align-self: flex-start;
+    
+  }
+  
+  .form-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-button {
+    font-size: 18px;
+    font-weight: bold;
+    
+  }
+  
+  .form-button-container:hover {
+    background-color: #FF9235;
+  }
+  
+  
+  .form-button-container:hover .form-button {
+    color: #fff;
+  }
+  
+    /* Burger */
+  
+  .mob-navbar details[open] {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0;
+    box-shadow: var();
+  }
+  
+  .mob-navbar summary {
+    width: 49px;
+    height: 49px;
+    cursor: pointer;
+    margin-left: 1.3rem;
+    background-image: url(../Иконки/Menu.svg);
+  }
+  
+  .mob-navbar {
+    display: none;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px 0 20px;
+    list-style: none;
+    text-decoration: none;
+    align-items: center;
+    position: fixed;
+    background-color: var(--color-whit);
+    box-shadow: var(--nav-shadow);
+  }
+  
+  .mob-navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 20px;
+    width: 100%;
+  }
+  
+  details > summary {
+    list-style: none;
+  }
+  
+  @media (max-width: 1000px) {
+  
+    #main {
+      padding-top: 80px;
+    }
+  
+    .navbar {
+        display: none;
+    }
+    .mob-navbar {
+        display: flex;
+    }
+  
+    .navbar-link {
+      padding: 10px 20px;
+    }
+  }
+  
+  @media (max-width: 1100px) {
+    nav ul {
+        width: 60%;
+        margin-left:  5%;
+        justify-content: space-around;
+    }
+    .form-btn-container {
+        width: 30%;
+        margin-right: 5%;
+    }
+  }
+  

@@ -1,0 +1,36 @@
+:root {
+    --text-p: 400 20px/35px "TildaSans", sans-serif;
+    --text-big: 700 36px/50px "TildaSans", sans-serif;
+    --table-header: 700 20px/35px "TildaSans", sans-serif;
+    --text-table-subheader: 400 16px/24px "TildaSans", sans-serif;
+    --text-table-p: 700 16px/24px "TildaSans", sans-serif;
+    --text-proj-desc: 400 16px/24px "TildaSans", sans-serif;
+    --nav-shadow: 0px 3px 10px 0px #0000002a;
+    --card-shadow: 5px 5px 10px 0px #00000055;
+
+    --color-blck: #141c3a;
+    --color-orng: #ff9235;
+    --color-turq: #5dd9c8;
+    --color-purp: #8063a6;
+    --color-whit: #ffffff;
+}
+
+
+
+.big-header {
+    font: var(--text-big);
+    text-transform: uppercase;
+    max-width: 90vw;
+}
+
+.sub-title {
+    width: 70%;
+    margin: 10px 0 100px 0;
+    margin-inline: auto;
+    font: var(--text-p);
+    line-height: 1.6;
+  }
+
+.color-black {
+    color: var(--color-blck);
+}

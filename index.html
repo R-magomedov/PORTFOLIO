@@ -4,10 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/common.css">
+    <link rel="stylesheet" href="Styles/fonts.css">
+    <link rel="stylesheet" href="Styles/navbar.css">
+    <link rel="stylesheet" href="Styles/about.css">
+    <link rel="stylesheet" href="Styles/skills.css">
+    <link rel="stylesheet" href="Styles/project.css">
+    <link rel="stylesheet" href="Styles/form.css">
+    <link rel="stylesheet" href="Styles/footer.css">
+
 </head>
-<body>
-    <header class="page-header">
+<body  tabindex="0">
+    <header>
         <nav class="navbar">
             <ul class="navbar-list">
                 <li class="navbar-item">
@@ -23,19 +32,41 @@
                     <a class="navbar-link" href="#projects">Проекты</a>
                 </li>
             </ul>
-            <div class="form-button-container">
-                <a class="form-button" href="#form"> Связаться со мной</a>
+            <div class="form-btn-container">
+                <a class="form-button-container">
+                    <span class="form-button" href="#form"> Связаться со мной</span>
+                </a>
             </div>
+        </nav>
+        
+        <nav class="mob-navbar">
+            <details class="nvb">
+                <summary></summary>
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="#main">Главная</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="#about">Обо мне</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="#skills">Навыки и стэк</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="#projects">Проекты</a>
+                    </li>
+                </ul>
+            </details>
+            <a class="form-button-container">
+                <span class="form-button" href="#form"> Связаться со мной</span>
+            </a>
         </nav>
     </header>
 
-    <div class="page-body">
         <main>
-            <section class="page-section main" id="main">
-                <div class="main-section">
-                    <h1>Раджаб Магомедов</h1>
-                    <p class="sub-title">Создаю адаптивные и быстрые веб-интерфейсы. Фокус на чистом коде, удобстве и функциональности</p>
-                </div>
+            <section class="page-section" id="main">
+                    <h1 class="big-header color-black">Раджаб Магомедов</h1>
+                    <p class="sub-title color-black">Создаю адаптивные и быстрые веб-интерфейсы. Фокус на чистом коде, удобстве и функциональности</p>
                 <div class="image-container">
                     <img class="main-image" src="/images/Главный экран.png" alt="Картинка главного экрана">
                 </div>
@@ -43,56 +74,76 @@
 
             <section class="page-section about" id="about">
                 <div class="about-background">
-                    <div class="about-text">
-                        <h2>Приветствую, я веб-разработчик</h2>
-                        <p class="sub-title">Разрабатываю современные сайты, учитывая пользовательский опыт и передовые технологии</p>
-                    </div>
+                    <h2 class="big-header color-black">Приветствую, я веб-разработчик</h2>
+                    <p class="sub-title color-black">Разрабатываю современные сайты, учитывая пользовательский опыт и передовые технологии</p>
                 </div>
-                <img class="about-image" src="/images/Fhoto.png" alt="Фото автора">
+                <div class="about-image">
+                    <img src="/images/Fhoto.png" alt="Фото автора">
+                </div>
             </section> 
 
-            <section class="page-section skills" id="skills"> 
-                <h2>Навыки и стек технологий</h2> 
-                <div class="skills-container">
-                    <section class="skills-1">
-                        <img class="image-skills" src="/Иконки/Development.svg" alt="иконка-Инструменты">
-                        <h3 class="text-title">Разработка сайтов</h3>
-                            <p>Опыт в создании адаптивных и кроссбраузерных веб-приложений.<br> Владею основами фронтенда, умею анализировать и тестировать код, проводить рефакторинг и писать документацию.</p>
-                        <h5 class="text-orange">Языки:</h5>
-                        <ul>
-                            <li>HTML, CSS (Flexbox, Grid)</li>
-                            <li>JavaScript, jQuery</li>
-                            <li>SQL (PostgreSQL)</li>
-                        </ul>
-                        <h5 class="text-orange">Инструменты:</h5>
-                        <ul>
-                            <li>Git, GitHub</li>
-                            <li>WebPack</li>
-                            <li>API (Rest API)</li>
-                            <li>SASS, LESS</li>
-                        </ul>
-                    </section>
-                    <section class="skills-2">
-                        <img class="image-skills" src="/Иконки/Design.svg" alt="Иконка-Дизайн">
-                        <h3 class="text-title">Дизайн</h3>
-                        <p>Понимаю основы UX/UI-дизайна, умею работать в Figma и автоматизировать процессы.</p>
-                        <h5 class="text-orange">Инструменты:</h5>
-                        <ul>
-                            <li>Figma</li>
-                        </ul>
-                    </section>
-                    <section class="skills-3">
-                        <img class="image-skills" src="/Иконки/SoftSkills.svg" alt="Иконка Софт-Скилы">
-                        <h3 class="text-title">Soft skills</h3>
-                        <p>Опыт работы в команде по методологиям Agile, Scrum, Kanban.<br> Способность анализировать код, проводить код-ревью и тестирование API</p>
+            <section class="page-section skills" id="skills">
 
-                        <h5 class="text-orange">Навыки:</h5>
-                        <ul>
-                            <li>Code Review и рефакторинг</li>
-                            <li>Написание unit-тестов</li>
-                            <li>Работа с DevOps-подходами</li>
-                            <li>Анализ и отладка кода</li>
-                        </ul>
+                <h2 class="big-header color-black">Навыки и стек технологий</h2> 
+                <div class="skills-container">
+
+                    <section class="skills-card">
+                        
+                        <div class="skills-section">
+                            <img class="image-skills" src="Иконки/Development.svg" alt="иконка-Инструменты">
+                            <h3 class="skills-table-header color-black">Разработка сайтов</h3>
+                            <p class="skills-table-text color-black">Опыт в создании адаптивных и кроссбраузерных веб-приложений. Владею основами фронтенда, умею анализировать и тестировать код, проводить рефакторинг и писать документацию.</p>
+                        </div>
+
+                        <div class="skills-section">
+                            <h5 class="skills-table-p text-orange">Языки:</h5>
+                            <ul>
+                                <li>HTML, CSS (Flexbox, Grid)</li>
+                                <li>JavaScript, jQuery</li>
+                                <li>SQL (PostgreSQL)</li>
+                            </ul>
+                            <h5 class="skills-table-p text-orange">Инструменты:</h5>
+                            <ul>
+                                <li>Git, GitHub</li>
+                                <li>WebPack</li>
+                                <li>API (Rest API)</li>
+                                <li>SASS, LESS</li>
+                            </ul>
+                        </div>
+                    </section>
+                    
+                    <section class="skills-card">
+
+                        <div class="skills-section">
+                            <img class="image-skills" src="/Иконки/Design.svg" alt="Иконка-Дизайн">
+                            <h3 class="skills-table-header color-black">Дизайн</h3>
+                            <p class="skills-table-text">Понимаю основы UX/UI-дизайна, умею работать в Figma и автоматизировать процессы.</p>
+                        </div>
+                        <div class="skills-section">
+                            
+                            <h5 class="skills-table-p text-orange">Инструменты:</h5>
+                            <ul>
+                                <li>Figma</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="skills-card">
+
+                        <div class="skills-section">
+                            <img class="image-skills" src="/Иконки/SoftSkills.svg" alt="Иконка Софт-Скилы">
+                            <h3 class="skills-table-header color-black">Soft skills</h3>
+                            <p class="skills-table-text">Опыт работы в команде по методологиям Agile, Scrum, Kanban. Способность анализировать код, проводить код-ревью и тестирование API</p>
+                        </div>
+                        <div class="skills-section">
+                            <h5 class="skills-table-p text-orange">Навыки:</h5>
+                            <ul>
+                                <li>Code Review и рефакторинг</li>
+                                <li>Написание unit-тестов</li>
+                                <li>Работа с DevOps-подходами</li>
+                                <li>Анализ и отладка кода</li>
+                            </ul>
+                        </div>
                     </section>
                 </div>
             </section>
@@ -100,36 +151,44 @@
             <section class="page-section projects" id="projects">
                 <h2>ПРОЕКТЫ</h2>
                 <div class="project-container">
-                    <div class="project-screenshot">
-                        <a href="#" class="project-link">
-                            <img src="/images/Проект 1.jpg" alt="Скриншот проекта. Блок ссылка на сайт">
-                        </a>
+
+                    <div class="project-screenshot one">
+                        <figcaption class="project-screenshot-caption">
+                            Проект 1. Экскурсия по Санкт-Питербургу
+                            <a href="/" class="project-link">Посмотреть сайт</a>
+                        </figcaption>
+                    </div>
+                    <div class="project-screenshot two">
+                        <div class="project-screenshot-caption">
+                            Проект 2. Сайт-портфолио
+                            <a href="/" class="project-link">Посмотреть сайт</a>
+                        </div>
+                    </div>
+                    <div class="project-screenshot three">
+                        <div class="project-screenshot-caption">
+                            Проект 3. Верстка по макету сайта
+                            <a href="/" class="project-link">Посмотреть сайт</a>
+                        </div>
                     </div>
                     <div class="project-screenshot">
-                        <a href="#" class="project-link">
-                            <img src="#" alt="Скриншот проекта. Блок ссылка на сайт">
-                        </a>
+                        <div class="project-screenshot-caption">
+                            Проект 4
+                            <a href="/" class="project-link">Посмотреть сайт</a>
+                        </div>
                     </div>
                     <div class="project-screenshot">
-                        <a href="#" class="project-link">
-                            <img src="#" alt="Скриншот проекта. Блок ссылка на сайт">
-                        </a>
+                        <div class="project-screenshot-caption">
+                            Проект 5
+                            <a href="/" class="project-link">Посмотреть сайт</a>
+                        </div>
                     </div>
                     <div class="project-screenshot">
-                        <a href="#" class="project-link">
-                            <img src="#" alt="Скриншот проекта. Блок ссылка на сайт">
-                        </a>
+                        <div class="project-screenshot-caption">
+                            Проект 6
+                            <a href="/" class="project-link">Посмотреть сайт</a>
+                        </div>
                     </div>
-                    <div class="project-screenshot">
-                        <a href="#" class="project-link">
-                            <img src="#" alt="Скриншот проекта. Блок ссылка на сайт">
-                        </a>
-                    </div>
-                    <div class="project-screenshot">
-                        <a href="#" class="project-link">
-                            <img src="#" alt="Скриншот проекта. Блок ссылка на сайт">
-                        </a>
-                    </div>
+                   
                 </div>
 
                 <div class="github-link-container">
@@ -141,7 +200,7 @@
 
                 <div class="form-background">
                     <h2>Хотите заказать сайт?</h2>
-                     <p class="sub-title">Напишите мне, чтобы обсудить детали.</p> 
+                     <p class="sub-title color-black">Напишите мне, чтобы обсудить детали.</p> 
                 </div>
 
                 <div class="form-container">
@@ -173,21 +232,24 @@
             </section>
 
         </main>
-        <footer class="page-footer">
+        <aside class="page-section">
             <div class="footer-contact">
-                <h3>Договоримся о сотрудничестве</h3>
+                <h3 >Договоримся о сотрудничестве</h3>
                 <p>У вас есть идея проекта или предложение о работе? Напишите мне. Я открыт(а) к разным вариантам сотрудничества.</p>
                 <div class="tg-link-container">
                     <a class="tg-link" href="https://t.me/rmagomedov1995" target="_blank">Связаться с разработчиком</a>
                 </div>
             </div>
-
+        </aside>
+        <footer class="page-footer">
+           
             <div class="footer-container">
                 <div class="footer-logo">
                     <img class="footer-logo-link" src="/Иконки/TG.svg" alt="Telegram">
                     <img class="footer-logo-link" src="/Иконки/Habr.svg" alt="Habr">
                     <img class="footer-logo-link" src="/Иконки/Email.svg" alt="email">
                 </div>
+                
                 <div class="footer-link">
                     <p>Изображения и иконки:</p>
                     <a href="https://ru.freepik.com/free-vector/software-integration-conceptillustration_18352184.htm#page=2&query=вебразработка&position=7&from_view=search&track=sp h">Изображение-1 от Storyset на Freepik.</a> 
@@ -206,6 +268,5 @@
                 </div>
             </div>
         </footer>
-    </div>
 </body>
 </html>
